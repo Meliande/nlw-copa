@@ -9,7 +9,6 @@ const prisma = new PrismaClient({
 async function boostrap() {
     const fastify = Fastify({
         logger: true,
-
     })
 
     await fastify.register(cors, {
