@@ -4,8 +4,8 @@ import { useFonts, Roboto_400Regular, Roboto_500Medium , Roboto_700Bold} from '@
 import { Loading } from './src/components/Loading';
 
 import { THEME } from './src/styles/theme'
-import { Polls } from './src/screens/Polls';
 import { AuthContextProvider } from './src/contexts/AuthContext';
+import { Routes } from './src/routes';
 
 export default function App() {
 
@@ -19,7 +19,7 @@ export default function App() {
           backgroundColor="transparent"
           translucent
         />
-        {fontsLoaded ? <Polls/> : <Loading/>}
+        {fontsLoaded ? <Routes/> : <Loading/>}
       </AuthContextProvider>
     </NativeBaseProvider>
   );
